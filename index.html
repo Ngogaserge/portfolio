@@ -147,7 +147,7 @@
   </section>
 
  
-  <section id="about" class="section bg-dark">
+  <!-- <section id="about" class="section bg-dark">
     <div class="container">
       <h2 class="text-center mb-5">About Me</h2>
       <div class="row justify-content-center">
@@ -160,6 +160,41 @@
         </div>
       </div>
     </div>
+  </section> -->
+  <section id="about" class="section bg-dark">
+    <div class="container">
+      <h2 class="text-center mb-5">About Me</h2>
+      <div class="row align-items-center">
+        <!-- Profile Picture -->
+        <div class="col-md-4 text-center">
+          <img src="images/Screenshot_20240820-143104.jpg" class="img-fluid rounded-circle mb-4" alt="N Serge" style="width: 250px; height: 250px; object-fit: cover;" />
+          <!-- <div class="social-icons mb-4">
+            <a href="https://github.com/Ngogaserge"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/Ngoga-serge"><i class="fab fa-linkedin"></i></a>
+            <a href="https://instagram.com/ng_serge"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/nserge__"><i class="fab fa-twitter"></i></a>
+          </div> -->
+        </div>
+  
+        <!-- Bio and Highlights -->
+        <div class="col-md-8">
+          <p class="lead">
+            I'm a passionate Full Stack Developer with expertise in building modern, scalable, and user-friendly web applications. I specialize in both frontend and backend technologies, and I love solving complex problems with elegant solutions.
+          </p>
+          <p>
+            With over <span class="text-primary">3 years</span> of experience, I've worked on a variety of projects, from small startups to large-scale applications. I'm always eager to learn new technologies and improve my skills to deliver the best results.
+          </p>
+          <div class="row mt-4">
+            
+          </div>
+          <div class="mt-4">
+            <a href="CV/Ngoga Serge CV.pdf" class="btn btn-primary" download>
+              <i class="fas fa-download"></i> Download Resume
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
   
   
@@ -167,7 +202,7 @@
     <div class="container">
       <h2 class="text-center mb-5">Skills</h2>
       <div class="row text-center g-4">
-        
+        <!-- Frontend Skills -->
         <div class="col-md-3 col-6">
           <i class="fab fa-react skill-icon"></i>
           <h5>React</h5>
@@ -184,7 +219,8 @@
           <i class="fab fa-css3-alt skill-icon"></i>
           <h5>CSS3</h5>
         </div>
-        
+  
+        <!-- Backend Skills -->
         <div class="col-md-3 col-6">
           <i class="fab fa-java skill-icon"></i>
           <h5>Java</h5>
@@ -201,7 +237,8 @@
           <i class="fas fa-database skill-icon"></i>
           <h5>SQL</h5>
         </div>
-        
+  
+        <!-- DevOps & Tools -->
         <div class="col-md-3 col-6">
           <i class="fab fa-aws skill-icon"></i>
           <h5>AWS</h5>
@@ -218,6 +255,12 @@
           <i class="fas fa-wind skill-icon"></i>
           <h5>Tailwind</h5>
         </div>
+  
+        <!-- New Skill: Kubernetes -->
+        <div class="col-md-3 col-6">
+          <i class="fas fa-ship skill-icon"></i> <!-- You can use a ship icon for Kubernetes -->
+          <h5>Kubernetes</h5>
+        </div>
       </div>
     </div>
   </section>
@@ -229,24 +272,31 @@
         <!-- E-Commerce Platform -->
         <div class="col-md-4 mb-4" data-aos="zoom-in">
           <div class="card h-100">
+            <img src="images/image.png" class="card-img-top" alt="Online Voting System" /> <!-- Add your image URL here -->
             <div class="card-body">
               <h3>Online Voting System</h3>
-              <p>Full-featured online voting system with real time results tracking.</p>
+              <p>Full-featured online voting system with real-time results tracking.</p>
               <div class="mb-3">
                 <span class="project-tag">Spring Boot</span>
                 <span class="project-tag">React</span>
                 <span class="project-tag">PostgreSQL</span>
               </div>
-              <a href="https://github.com/username/ecommerce" class="github-link">
-                <i class="fab fa-github"></i> View on GitHub
-              </a>
+              <div class="d-flex gap-2">
+                <a href="https://github.com/Ngogaserge/VoteCast" class="btn btn-primary btn-sm">
+                  <i class="fab fa-github"></i> View on GitHub
+                </a>
+                <a href="https://main.d3tcucdtfyahvp.amplifyapp.com/" class="btn btn-outline-light btn-sm" target="_blank">
+                  <i class="fas fa-external-link-alt"></i> View Demo
+                </a>
+              </div>
             </div>
           </div>
         </div>
-
+  
         <!-- Task Manager -->
         <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="100">
           <div class="card h-100">
+            <img src="images/Task Management Dashboard.jpg" class="card-img-top" alt="Task Manager" /> <!-- Add your image URL here -->
             <div class="card-body">
               <h3>Task Manager</h3>
               <p>Real-time collaborative task management system with team features.</p>
@@ -255,16 +305,22 @@
                 <span class="project-tag">Firebase</span>
                 <span class="project-tag">Material-UI</span>
               </div>
-              <a href="https://github.com/username/taskmanager" class="github-link">
-                <i class="fab fa-github"></i> View on GitHub
-              </a>
+              <div class="d-flex gap-2">
+                <a href="https://github.com/username/taskmanager" class="btn btn-primary btn-sm">
+                  <i class="fab fa-github"></i> View on GitHub
+                </a>
+                <a href="https://your-demo-link.com" class="btn btn-outline-light btn-sm" target="_blank">
+                  <i class="fas fa-external-link-alt"></i> View Demo
+                </a>
+              </div>
             </div>
           </div>
         </div>
-
+  
         <!-- Weather App -->
         <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
           <div class="card h-100">
+            <img src="images/Weather App.jpg" class="card-img-top" alt="Weather Dashboard" /> <!-- Add your image URL here -->
             <div class="card-body">
               <h3>Weather Dashboard</h3>
               <p>Real-time weather tracking with location-based forecasts.</p>
@@ -273,19 +329,22 @@
                 <span class="project-tag">Weather API</span>
                 <span class="project-tag">Chart.js</span>
               </div>
-              <a href="https://github.com/username/weather" class="github-link">
-                <i class="fab fa-github"></i> View on GitHub
-              </a>
-              <a href="https://main.d3tcucdtfyahvp.amplifyapp.com/" class="" target="_blank">
-                <i class="fab fa-github"></i> View Site
-              </a>
+              <div class="d-flex gap-2">
+                <a href="https://github.com/username/weather" class="btn btn-primary btn-sm">
+                  <i class="fab fa-github"></i> View on GitHub
+                </a>
+                <a href="https://main.d3tcucdtfyahvp.amplifyapp.com/" class="btn btn-outline-light btn-sm" target="_blank">
+                  <i class="fas fa-external-link-alt"></i> View Demo
+                </a>
+              </div>
             </div>
           </div>
         </div>
-
+  
         <!-- Chat Application -->
         <div class="col-md-4 mb-4" data-aos="zoom-in">
           <div class="card h-100">
+            <img src="images/chat_key_prez_c_png by Karol Kos.jpg" class="card-img-top" alt="Real-time Chat App" /> <!-- Add your image URL here -->
             <div class="card-body">
               <h3>Real-time Chat App</h3>
               <p>Real-time messaging platform with file sharing and video calls.</p>
@@ -294,16 +353,22 @@
                 <span class="project-tag">WebRTC</span>
                 <span class="project-tag">Express</span>
               </div>
-              <a href="https://github.com/username/chat-app" class="github-link">
-                <i class="fab fa-github"></i> View on GitHub
-              </a>
+              <div class="d-flex gap-2">
+                <a href="https://github.com/username/chat-app" class="btn btn-primary btn-sm">
+                  <i class="fab fa-github"></i> View on GitHub
+                </a>
+                <a href="https://your-demo-link.com" class="btn btn-outline-light btn-sm" target="_blank">
+                  <i class="fas fa-external-link-alt"></i> View Demo
+                </a>
+              </div>
             </div>
           </div>
         </div>
-
+  
         <!-- Blog Platform -->
         <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="100">
           <div class="card h-100">
+            <img src="images/Learning platform - Web app.jpg" class="card-img-top" alt="Blog Platform" /> <!-- Add your image URL here -->
             <div class="card-body">
               <h3>Blog Platform</h3>
               <p>Modern blogging platform with markdown support and SEO optimization.</p>
@@ -312,16 +377,22 @@
                 <span class="project-tag">PostgreSQL</span>
                 <span class="project-tag">Tailwind</span>
               </div>
-              <a href="https://github.com/username/blog-platform" class="github-link">
-                <i class="fab fa-github"></i> View on GitHub
-              </a>
+              <div class="d-flex gap-2">
+                <a href="https://github.com/username/blog-platform" class="btn btn-primary btn-sm">
+                  <i class="fab fa-github"></i> View on GitHub
+                </a>
+                <a href="https://your-demo-link.com" class="btn btn-outline-light btn-sm" target="_blank">
+                  <i class="fas fa-external-link-alt"></i> View Demo
+                </a>
+              </div>
             </div>
           </div>
         </div>
-
+  
         <!-- Fitness Tracker -->
         <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
           <div class="card h-100">
+            <img src="images/Health Tracker Dashboard.jpg" class="card-img-top" alt="Fitness Tracker" /> <!-- Add your image URL here -->
             <div class="card-body">
               <h3>Fitness Tracker</h3>
               <p>Workout tracking app with progress visualization and meal planning.</p>
@@ -330,9 +401,14 @@
                 <span class="project-tag">Redux</span>
                 <span class="project-tag">Firebase</span>
               </div>
-              <a href="https://github.com/username/fitness-tracker" class="github-link">
-                <i class="fab fa-github"></i> View on GitHub
-              </a>
+              <div class="d-flex gap-2">
+                <a href="https://github.com/username/fitness-tracker" class="btn btn-primary btn-sm">
+                  <i class="fab fa-github"></i> View on GitHub
+                </a>
+                <a href="https://your-demo-link.com" class="btn btn-outline-light btn-sm" target="_blank">
+                  <i class="fas fa-external-link-alt"></i> View Demo
+                </a>
+              </div>
             </div>
           </div>
         </div>
