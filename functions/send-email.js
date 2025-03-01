@@ -1,19 +1,22 @@
+require('dotenv').config();
+
 const nodemailer = require('nodemailer');
 
 exports.handler = async (event) => {
   const { name, email, subject, message } = JSON.parse(event.body);
 
+  // Create a transporter using environment variables
   const transporter = nodemailer.createTransport({
     service: 'Gmail',
     auth: {
-      user: process.env.EMAIL,
-      pass: process.env.EMAIL_PASSWORD,
+      user: process.env.EMAIL, // Your email from environment variables
+      pass: process.env.EMAIL_PASSWORD, // Your email password from environment variables
     },
   });
 
   const mailOptions = {
-    from: email,
-    to: process.env.EMAIL,
+    from: email, // Sender's email (from the form)
+    to: process.env.EMAIL, // Your email (to receive the message)
     subject: `New Message from ${name}: ${subject}`,
     text: message,
   };
