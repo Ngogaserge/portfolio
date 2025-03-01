@@ -1,9 +1,34 @@
-require('dotenv').config();
-
 const nodemailer = require('nodemailer');
 
 exports.handler = async (event) => {
-  const { name, email, subject, message } = JSON.parse(event.body);
+  // Check if the request body is empty
+  if (!event.body) {
+    return {
+      statusCode: 400,
+      body: JSON.stringify({ error: 'Request body is empty' }),
+    };
+  }
+
+  // Parse the JSON data
+  let formData;
+  try {
+    formData = JSON.parse(event.body);
+  } catch (error) {
+    return {
+      statusCode: 400,
+      body: JSON.stringify({ error: 'Invalid JSON data' }),
+    };
+  }
+
+  const { name, email, subject, message } = formData;
+
+  // Validate required fields
+  if (!name || !email || !subject || !message) {
+    return {
+      statusCode: 400,
+      body: JSON.stringify({ error: 'Missing required fields' }),
+    };
+  }
 
   // Create a transporter using environment variables
   const transporter = nodemailer.createTransport({
