@@ -19,7 +19,7 @@ document.getElementById('contact-form').addEventListener('submit', async functio
   
       const result = await response.json();
       if (response.ok) {
-        alert('Message sent! I Will get back to you shortly');
+        alert('Message sent! I Will get back to you soon');
       } else {
         alert(`Failed to send message: ${result.error}`);
       }
